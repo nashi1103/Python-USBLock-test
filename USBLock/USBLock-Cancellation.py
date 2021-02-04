@@ -11,5 +11,6 @@ try:
 #レジストリの書き換え
     settings = winreg.SetValueEx(Key,"Start",0,winreg.REG_DWORD,3)
     winreg.CloseKey(Key)
+    print("USBロックが解除されました。")
 except:
     print("正常に動作しませんでした。")
